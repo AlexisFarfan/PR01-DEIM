@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Ejercicio1 : MonoBehaviour
 {
-    public int num1;
+    public int num1 = 3;
     [SerializeField] float num2;
-   [SerializeField] bool alive;
-    public string saludo;
+   [SerializeField] bool alive=true;
+    public string saludo = "hola";
 
 
     // Start is called before the first frame update
     void Start()
     {
-        print(num1);
-        print(num2);
-        print(alive);
-        print(saludo);
+        print(saludo + alive);
+        print(num2 + " " + saludo);
+        print(num1 + num2);
+        print(saludo + " " +num1);
     }
 
     // Update is called once per frame
