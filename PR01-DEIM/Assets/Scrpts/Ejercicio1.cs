@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Ejercicio1 : MonoBehaviour
 {
-    private int num1 = 1;
-    private float num2 = 3.5f;
-    private bool alive = true;
-    private string saludo = "hola";
+    public int num1;
+    [SerializeField] float num2;
+   [SerializeField] bool alive;
+    public string saludo;
 
 
     // Start is called before the first frame update
