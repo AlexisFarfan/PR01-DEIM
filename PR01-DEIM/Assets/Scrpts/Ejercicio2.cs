@@ -25,8 +25,8 @@ public class Ejercicio2 : MonoBehaviour
             
            print(num1);
         }
-
-        num1 = num1+1;
+        //el ++ resumea la operacion
+        num1++;
 
 
     }
