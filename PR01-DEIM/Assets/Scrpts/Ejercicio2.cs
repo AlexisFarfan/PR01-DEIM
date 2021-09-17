@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Ejercicio2 : MonoBehaviour
 {
-   // private int num1= 1;
+    // private int num1= 1;
+
+    private bool t;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +17,33 @@ public class Ejercicio2 : MonoBehaviour
             num1++;
         }
         */
+        /*
         for (int num2 = 1;num2<=10;num2++)
         {
 
             print(num2);
         }
+        */
+
+        for (int n = 1; n <= 10; n++)
+        {
+            if (n <= 5)
+            {
+                t = true;
+                print(t);
+            }
+
+           else
+            {
+                t = false;
+                print(t);
+
+            }
+
+
+        }
+
+
     }
 
     // Update is called once per frame
