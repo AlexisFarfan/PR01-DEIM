@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ejercicio3 : MonoBehaviour
-{
-
-    public string saludo;
+{ 
 
     // Start is called before the first frame update
     void Start()
     {
-      
-        Saludo();
+        Saludo("Alexis",29);
+       
+        
+
     }
 
     // Update is called once per frame
@@ -19,12 +19,16 @@ public class Ejercicio3 : MonoBehaviour
     {
         
     }
-
-    void Saludo()
+    
+    void Saludo(string nombre,int edad)
     {
-        var nombre = "Alvaro";
-        saludo = "hola";
-        print(saludo+" "+nombre);
+        
+        print("hola "+ nombre + ". Tu edad es de " + edad + " años");
 
     }
+   
+
+    
+
+
 }
