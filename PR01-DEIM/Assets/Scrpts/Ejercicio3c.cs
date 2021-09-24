@@ -12,15 +12,28 @@ public class Ejercicio3c : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine("Contador");
+       //StartCoroutine("Contador");
        
     }
 
     // Update is called once per frame
-   
+     void Update()
+    {
+
+
+        if (Input.GetKeyDown("space"))
+        {
+            StartCoroutine("Contador");
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            StopCoroutine("Contador");
+        }
+
+    }
     IEnumerator Contador()
     {
-        
+       
         
         for (int h = 0; h<=60 ; h++)
         {
