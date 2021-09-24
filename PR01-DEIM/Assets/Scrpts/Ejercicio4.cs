@@ -10,7 +10,7 @@ public class Ejercicio4 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //transform.position = InitPos;
+        
     }
 
     // Update is called once per frame
@@ -27,8 +27,11 @@ public class Ejercicio4 : MonoBehaviour
         float moverZ = Input.GetAxis("Profundidad") * speed;
         transform.Translate(Vector3.back * moverZ * Time.deltaTime);
 
-      
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            print("disparo");
+        }
 
     }
 }

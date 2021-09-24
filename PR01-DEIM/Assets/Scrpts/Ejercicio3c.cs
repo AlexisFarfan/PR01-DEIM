@@ -36,11 +36,11 @@ public class Ejercicio3c : MonoBehaviour
             StartCoroutine("Contador");
                    
         }
-        else
+       /* else
         {
             StopCoroutine("Contador");
         }
-
+*/
     }
     IEnumerator Contador()
     {
